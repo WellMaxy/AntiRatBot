@@ -10,10 +10,6 @@ async def пинг(ctx):
     await ctx.send('понг')
 
 @bot.command()
-async def инвайт(ctx):
-    await ctx.send('ссылка на наше логово: https://discord.gg/8bfGAp7hqE (только крысям всяким не показывай)')
-
-@bot.command()
 async def крыса(ctx, probably_rats: commands.Greedy[discord.Member]):
     for mb_rat in probably_rats:
         print(mb_rat)
